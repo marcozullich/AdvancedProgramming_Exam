@@ -6,3 +6,5 @@ install:
 script:
   - python3 ./mix/treetest.py
   - python3 ./python/PostcardList.py
+  - python3 ./mix/examplePybind11/pythonExample.py
+
