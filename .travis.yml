@@ -6,7 +6,7 @@ language: python
 python:
   - 3.6
 #install:
-  - pip install -r requirements.txt
+#  - pip install -r requirements.txt
 #  - pip install python3-dev pybind11
 script:
   - python3 ./mix/treetest.py
