@@ -1,6 +1,8 @@
 
 import os
-os.system ("make -f ./Makefile")
+os.system ("make -f ./mix/examplePybind11/Makefile")
+os.system ("pwd")
+os.system ("ll")
 import example
 
 print(example.add(1, 2))
