@@ -1,3 +1,6 @@
+
+import os
+os.system ("make")
 import example
 
 print(example.add(1, 2))
