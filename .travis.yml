@@ -4,5 +4,5 @@ python:
 install:
 #  - pip install unittest
 script:
-  - ./mix/treetest
-  - ./python/PostcardList
+  - python3 ./mix/treetest.py
+  - python3 ./python/PostcardList.py
