@@ -1,0 +1,82 @@
+example.o: example.cpp
+test_gil_scoped.o: pybind11/tests/test_gil_scoped.cpp \
+ pybind11/tests/pybind11_tests.h
+test_virtual_functions.o: pybind11/tests/test_virtual_functions.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_methods_and_attributes.o: \
+ pybind11/tests/test_methods_and_attributes.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_builtin_casters.o: pybind11/tests/test_builtin_casters.cpp \
+ pybind11/tests/pybind11_tests.h
+test_copy_move.o: pybind11/tests/test_copy_move.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_numpy_vectorize.o: pybind11/tests/test_numpy_vectorize.cpp \
+ pybind11/tests/pybind11_tests.h
+test_exceptions.o: pybind11/tests/test_exceptions.cpp \
+ pybind11/tests/pybind11_tests.h
+test_iostream.o: pybind11/tests/test_iostream.cpp \
+ pybind11/tests/pybind11_tests.h
+test_eigen.o: pybind11/tests/test_eigen.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_tagbased_polymorphic.o: pybind11/tests/test_tagbased_polymorphic.cpp \
+ pybind11/tests/pybind11_tests.h
+test_call_policies.o: pybind11/tests/test_call_policies.cpp \
+ pybind11/tests/pybind11_tests.h
+test_constants_and_functions.o: \
+ pybind11/tests/test_constants_and_functions.cpp \
+ pybind11/tests/pybind11_tests.h
+test_local_bindings.o: pybind11/tests/test_local_bindings.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/local_bindings.h
+test_pytypes.o: pybind11/tests/test_pytypes.cpp \
+ pybind11/tests/pybind11_tests.h
+test_stl.o: pybind11/tests/test_stl.cpp pybind11/tests/pybind11_tests.h \
+ pybind11/tests/constructor_stats.h
+test_callbacks.o: pybind11/tests/test_callbacks.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_pickling.o: pybind11/tests/test_pickling.cpp \
+ pybind11/tests/pybind11_tests.h
+test_multiple_inheritance.o: pybind11/tests/test_multiple_inheritance.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_factory_constructors.o: pybind11/tests/test_factory_constructors.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_buffers.o: pybind11/tests/test_buffers.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_class.o: pybind11/tests/test_class.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h \
+ pybind11/tests/local_bindings.h
+pybind11_cross_module_tests.o: \
+ pybind11/tests/pybind11_cross_module_tests.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/local_bindings.h
+test_smart_ptr.o: pybind11/tests/test_smart_ptr.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/object.h \
+ pybind11/tests/constructor_stats.h
+test_modules.o: pybind11/tests/test_modules.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_enum.o: pybind11/tests/test_enum.cpp pybind11/tests/pybind11_tests.h
+test_operator_overloading.o: pybind11/tests/test_operator_overloading.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_opaque_types.o: pybind11/tests/test_opaque_types.cpp \
+ pybind11/tests/pybind11_tests.h
+pybind11_tests.o: pybind11/tests/pybind11_tests.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+test_chrono.o: pybind11/tests/test_chrono.cpp \
+ pybind11/tests/pybind11_tests.h
+test_numpy_array.o: pybind11/tests/test_numpy_array.cpp \
+ pybind11/tests/pybind11_tests.h
+test_eval.o: pybind11/tests/test_eval.cpp pybind11/tests/pybind11_tests.h
+test_docstring_options.o: pybind11/tests/test_docstring_options.cpp \
+ pybind11/tests/pybind11_tests.h
+test_sequences_and_iterators.o: \
+ pybind11/tests/test_sequences_and_iterators.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
+external_module.o: pybind11/tests/test_embed/external_module.cpp
+catch.o: pybind11/tests/test_embed/catch.cpp
+test_interpreter.o: pybind11/tests/test_embed/test_interpreter.cpp
+test_stl_binders.o: pybind11/tests/test_stl_binders.cpp \
+ pybind11/tests/pybind11_tests.h
+test_numpy_dtypes.o: pybind11/tests/test_numpy_dtypes.cpp \
+ pybind11/tests/pybind11_tests.h
+main.o: pybind11/tests/test_cmake_build/main.cpp
+embed.o: pybind11/tests/test_cmake_build/embed.cpp
+test_kwargs_and_defaults.o: pybind11/tests/test_kwargs_and_defaults.cpp \
+ pybind11/tests/pybind11_tests.h pybind11/tests/constructor_stats.h
