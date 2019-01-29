@@ -1,6 +1,6 @@
 
 import os
-os.system ("make")
+os.system ("make -f ./Makefile")
 import example
 
 print(example.add(1, 2))
