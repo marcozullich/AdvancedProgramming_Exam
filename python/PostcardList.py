@@ -78,9 +78,6 @@ class PostcardList(object):
             lineNumber += 1
             
             
-a = PostcardList()
-a._file
-a.readFile("./exam_postcard_list0.txt")
 
 
 ########################
@@ -93,7 +90,7 @@ class Test(unittest.TestCase):
 
     @classmethod
     def setUpClass(self):
-        self._files = ['./exam_postcard_list{}.txt'.format(i) \
+        self._files = ['exam_postcard_list{}.txt'.format(i) \
                            for i in range(10)]
         self._PstLst = [PostcardList() for f in self._files]
         [p.readFile(f) for f,p in zip(self._files,self._PstLst)]
