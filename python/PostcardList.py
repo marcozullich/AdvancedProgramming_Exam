@@ -82,7 +82,7 @@ class PostcardList(object):
 
 ########################
 # TO COMMENT 
-from exam_solution import PostcardList # overrides the class define above
+#from exam_solution *import PostcardList # overrides the class define above
 ########################
 
 
