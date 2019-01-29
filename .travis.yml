@@ -1,6 +1,8 @@
 language: python
 python:
-  - "3.7"
+  - 3.7
+install:
+  - pip install unittest
 script:
   - ./mix/treetest
   - ./python/PostcardList
