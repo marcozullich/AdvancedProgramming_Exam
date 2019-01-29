@@ -1,4 +1,7 @@
 # Exam Advanced Programming
+
+[![Build Status](https://travis-ci.com/marcozullich/AdvancedProgramming_Exam.svg?branch=master)](https://travis-ci.com/marcozullich/AdvancedProgramming_Exam)
+
 ### How to submit
 The work is collaborative. Groups of 2 students are recommended but you can choose. Make sure that the work (and the lines of code written) is evenly distributed.
 ```
