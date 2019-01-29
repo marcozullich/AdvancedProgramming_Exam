@@ -1,4 +1,4 @@
-appname := example`python3-config --extension-suffix` 
+appname := example.so 
 
 CXX := c++
 CXXFLAGS := -O3 -Wall -shared -std=c++11
