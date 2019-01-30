@@ -5,4 +5,4 @@ python:
 #  - pip install python3-dev pybind11
 script:
   - python3 ./mix/treetest.py
-  - python3 ./python/PostcardList.py
+  - python3 ./python/exam_tests.py
