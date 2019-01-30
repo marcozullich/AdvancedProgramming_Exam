@@ -37,12 +37,15 @@ import unittest
 from PostcardList import * #corrected in order to comply to library's name
 ########################
 
+##needed for travis
+import os
+ROOT_PATH=""
 
 class Test(unittest.TestCase):
 
     @classmethod
     def setUpClass(self):
-        self._files = ['exam_postcard_list{}.txt'.format(i) \
+        self._files = [os.path.join(ROOT_PATH,'exam_postcard_list{}.txt'.format(i)) \
                            for i in range(10)]
         self._PstLst = [PostcardList() for f in self._files]
         [p.readFile(f) for f,p in zip(self._files,self._PstLst)]
@@ -111,6 +114,6 @@ class Test(unittest.TestCase):
         self.assertListEqual(srw_test[203],[6, 9, 11, 12, 24, 31, 42])
 
 if __name__ == '__main__':
-
+    ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
     unittest.main()
 
