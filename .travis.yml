@@ -5,5 +5,5 @@ python:
 #  - pip install python3-dev pybind11
 script:
   - python3 ./mix/treetest.py
-  - python_build.sh
+  - source python_build.sh
   - python3 ./python/exam_tests.py
