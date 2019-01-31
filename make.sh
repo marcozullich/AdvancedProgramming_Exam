@@ -1,2 +1,2 @@
-cd /c++
+cd ./c++
 make
