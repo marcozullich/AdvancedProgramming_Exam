@@ -7,7 +7,7 @@
             "label": "build",
             "type": "shell",
             "command": [
-                "cd c++",
+                "cd c++\n",
                 "make"
             ]
 

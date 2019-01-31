@@ -12,5 +12,4 @@ HEADER		= $(TARGET).h
 OUTPUT      = -o $(TARGET)$(SLSUFFIX)
 
 default:
-	clean
 	$(CC) $(CPPVERSION) $(CCFLAGS) $(SLFLAGS) $(INCLUDES) $(HEADER) $(OUTPUT)
