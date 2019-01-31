@@ -9,7 +9,7 @@ before_install:
 before_script:
   - cd ./c++
   - make -f ./Makefile
-  - cd ..
+  - cd ../mix
 script:
-  - python3 ./mix/treetest.py
-  - python3 ./python/exam_tests.py
+  - python3 ./treetest.py
+  - python3 ./../python/exam_tests.py
