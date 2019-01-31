@@ -1,2 +1,2 @@
 cd ./c++
-make
+make -f Makefile
