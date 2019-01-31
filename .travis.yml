@@ -5,8 +5,8 @@ python:
 #  - pip install python3-dev pybind11
 script:
 #  - source make.sh
-  - cd ./mix
+  - cd ./c++
   - make
-  - python3 ./mix/treetest.py
+  - python3 ./treetest.py
   - cd ./../python
-  - python3 ./python/exam_tests.py
+  - python3 ./exam_tests.py
