@@ -1,12 +1,13 @@
 language: python
 python:
   - 3.6
+before_install:
+  - sudo apt-get update -q
+  - sudo apt-get install -y --user python3-dev
 #install:
-#  - pip install python3-dev pybind11
+#  - pip install python3-dev pybind11+
+before_script:
+  - make -f ./c++/Makefile
 script:
-#  - source make.sh
-  - cd ./c++
-  - make
-  - python3 ./treetest.py
-  - cd ./../python
-  - python3 ./exam_tests.py
+  - python3 ./mix/treetest.py
+  - python3 ./python/exam_tests.py
