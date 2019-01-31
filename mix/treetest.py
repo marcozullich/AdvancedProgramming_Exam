@@ -1,3 +1,8 @@
-'''
-this is just an empty Python script to hold the tests for the BST class.
-'''
+import sys
+sys.path.insert(0, './python')
+import bst
+import unittest
+
+class Test(unittest.TestCase):
+    def test_HelloWorld(self):
+        pass
