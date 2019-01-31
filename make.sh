@@ -1,2 +1,1 @@
-cd ./c++
-make -f Makefile
+make -f ./c++/Makefile
